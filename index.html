@@ -145,6 +145,61 @@
     
 
       <div class="main-content w-[1440px] h-[2208px] border border-[#1DD100] rounded-3xl" id="Seats">
+<!-- Seat section -->
+<div class="w-[1170px] h-[1056px]">
+    <div class="mx-10">
+        <p class="font-semibold text-black text-2xl">Select Your Seat</p>
+        
+        <div class="lg:flex lg:justify-between my-10 w-[609px] h-[28px]">
+            <div class="flex">
+                <img src="images/seat-gray.png" alt="">
+                <p class="px-5">Available</p>
+            </div>
+            <div class="flex">
+                <img src="images/seat-green-filled.png" alt="">
+                <p class="px-5 text-[#1DD100]">Selected</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Seat selection buttons -->
+    <img class="mx-[500px]" src="images/Group-56.svg" alt="">
+    <div id="seatButtons" class="text-black mx-5 grid lg:grid-cols-2 gap-10">
+        <button class="bg-white hover:bg-[#1DD100] active:bg-white focus:bg-[#1DD100] w-[110px] h-[56px]" data-seat="A1">A1</button>
+        <button class="bg-white hover:bg-[#1DD100] active:bg-white focus:bg-[#1DD100] w-[110px] h-[56px]" data-seat="A1">A2</button>
+        <button class="bg-white hover:bg-[#1DD100] active:bg-white focus:bg-[#1DD100] w-[110px] h-[56px]" data-seat="A1">B1</button>
+        <button class="bg-white hover:bg-[#1DD100] active:bg-white focus:bg-[#1DD100] w-[110px] h-[56px]" data-seat="A1">B2</button>
+        <button class="bg-white hover:bg-[#1DD100] active:bg-white focus:bg-[#1DD100] w-[110px] h-[56px]" data-seat="A1">C1</button>
+        <button class="bg-white hover:bg-[#1DD100] active:bg-white focus:bg-[#1DD100] w-[110px] h-[56px]" data-seat="A1">C2</button>
+        <button class="bg-white hover:bg-[#1DD100] active:bg-white focus:bg-[#1DD100] w-[110px] h-[56px]" data-seat="A1">D1</button>
+        <button class="bg-white hover:bg-[#1DD100] active:bg-white focus:bg-[#1DD100] w-[110px] h-[56px]" data-seat="A1">D2</button>
+        
+    </div>
+    <!-- Selected seats -->
+    <div>  <p id="selectedSeatsText" class="my-20 mx-10 font-semibold text-black text-2xl">Selected Seats: 0</p></div>
+  
+    
+    <!-- Total price -->
+    <div class="flex justify-between text-black mx-10 font-bold">
+        <p>Total Price</p>
+        <p id="totalPrice">BDT 0</p>
+    </div>
 
+    <!-- Next button -->
+    <button id="nextButton"   class="bg-[#1DD100] my-20 mx-52 w-[500px] h-12 rounded-lg text-white">NEXT</button>
+</div>
+</div>
+
+
+<!-- Success section -->
+<div id="successSection" class="hidden text-center w-[718px] h-[481px]">
+<img class="mx-80 py-10" src="images/success.png" alt="">
+<p class="text-[#1DD100] mx-5 font-bold -py-20">SUCCESS</p>
+<p class="text-black">Thank you for Booking Our Bus Seats. <br>
+    We are working hard to find the best service and deals for you. <br>
+    Shortly you will find a confirmation in your email.</p>
+<button id="continueButton" class="w-[300px] h-[55px] text-white bg-[#27AE60]">Continue</button>
+</div>
+</main>
 </body>
 </html>
